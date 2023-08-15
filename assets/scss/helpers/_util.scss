@@ -1,3 +1,8 @@
+//容器
+.container {
+    max-width: 1296px;
+    margin: 0 auto;
+}
 // 顏色
 .bg-primary {
     background: $primary;
@@ -12,8 +17,17 @@
 .fz-5 {
     font-size: $spacer * 5;
 }
-
+//間距
+.px-3 {
+    padding: 0 $spacer * 3;
+}
 //flex排版
 .d-flex {
     display: flex;
+}
+.jc-sb {
+    justify-content: space-between;
+}
+.ai-center {
+    align-items: center;
 }
