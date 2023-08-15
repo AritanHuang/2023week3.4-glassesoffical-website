@@ -1,0 +1,19 @@
+// 顏色
+.bg-primary {
+    background: $primary;
+}
+.link-color {
+    color: $link-color;
+}
+// 字體
+.fw-400 {
+    font-weight: 400;
+}
+.fz-5 {
+    font-size: $spacer * 5;
+}
+
+//flex排版
+.d-flex {
+    display: flex;
+}

@@ -5,7 +5,7 @@
     }
 }
 //mobile斷點
-@mixin phone {
+@mixin mobile {
     @media (max-width: 767px) {
         @content;
     }

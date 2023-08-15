@@ -1,4 +1,55 @@
-.header{
-  background: #69F0AE;
-  font-size: 64px;
+.header {
+    .container {
+        max-width: 1296px;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 $spacer * 3;
+        @include mobile() {
+            flex-direction: column;
+            align-items: start;
+            padding: 0;
+        }
+        h1 {
+            margin: $spacer * 4 0;
+            background-image: url(/assets/images/logo-white.png);
+            width: 80px;
+            height: 50px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            @include hide-text;
+            @include mobile() {
+                margin-left: 15px;
+            }
+        }
+    }
+    .menu {
+        @include mobile() {
+            width: 100%;
+            flex-wrap: wrap;
+            text-align: center;
+        }
+        .menu-list:not(:last-child) {
+            margin-right: $spacer * 16;
+            @include mobile() {
+                margin-right: 0px;
+            }
+        }
+        .menu-list {
+            @include mobile() {
+                width: 50%;
+                border: 1px solid #fff;
+                padding: $spacer * 3 0;
+            }
+        }
+        .menu-link {
+            font-size: $fz-5;
+            @include mobile() {
+                font-size: $fz-4;
+            }
+        }
+        .menu-link:hover {
+            opacity: 0.7;
+        }
+    }
 }
