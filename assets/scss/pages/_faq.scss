@@ -1,0 +1,19 @@
+.faq-container {
+    max-width: 856px;
+    margin-top: $spacer * 24;
+    margin-bottom: $spacer * 20;
+    @include pad {
+        margin-top: $spacer * 20;
+    }
+    @include mobile {
+        margin-top: $spacer * 10;
+        margin-bottom: $spacer * 16;
+        h2 {
+            font-size: $spacer * 6;
+            margin-bottom: $spacer * 6;
+        }
+        .faq-list:not(:last-child) {
+            margin-bottom: $spacer * 6;
+        }
+    }
+}
