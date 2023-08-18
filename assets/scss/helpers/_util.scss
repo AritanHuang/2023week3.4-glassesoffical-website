@@ -8,6 +8,9 @@
 .bg-primary {
     background: $primary;
 }
+.bg-pink {
+    background: $bg-color;
+}
 .link-color {
     color: $link-color;
 }
@@ -61,6 +64,9 @@
 .mb-2 {
     margin-bottom: $spacer * 2;
 }
+.mb-4 {
+    margin-bottom: $spacer * 4;
+}
 .mb-6 {
     margin-bottom: $spacer * 6;
 }
@@ -80,6 +86,12 @@
 .jc-end {
     justify-content: end;
 }
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.flex-column {
+    flex-direction: column;
+}
 .ai-center {
     align-items: center;
 }
@@ -91,6 +103,9 @@
 }
 .gap-2 {
     gap: 8px;
+}
+.gap-6 {
+    gap: 24px;
 }
 .gap-8 {
     gap: 32px;

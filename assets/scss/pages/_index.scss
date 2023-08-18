@@ -25,3 +25,28 @@
         }
     }
 }
+//服務項目區塊
+.service {
+    padding-top: $spacer * 20;
+    padding-bottom: $spacer * 20;
+    @include mobile {
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+        h3 {
+            font-size: $spacer * 6;
+        }
+    }
+    .service-item {
+        width: 25%;
+        @include pad {
+            width: 45%;
+        }
+        @include mobile {
+            width: 98%;
+        }
+        img {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
