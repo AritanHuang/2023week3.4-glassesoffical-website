@@ -29,6 +29,11 @@
 .service {
     padding-top: $spacer * 20;
     padding-bottom: $spacer * 20;
+    .service-nav {
+        @include pad {
+            flex-wrap: wrap;
+        }
+    }
     @include mobile {
         padding-top: $spacer * 10;
         padding-bottom: $spacer * 10;
