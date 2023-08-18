@@ -1,0 +1,27 @@
+// banner區塊scss
+.banner {
+    background-image: url(/assets/images/home-header.png);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    @include mobile {
+        background-image: url(/assets/images/home-header-sm.png);
+        h3 {
+            font-size: $spacer * 4;
+        }
+        p {
+            font-size: $spacer * 6;
+            margin-bottom: $spacer * 2;
+        }
+    }
+    .buy-link {
+        width: 104px;
+        height: 40px;
+        padding: 6px 12px;
+        margin-left: auto;
+        &:hover {
+            background-color: #fff;
+            color: $primary;
+        }
+    }
+}

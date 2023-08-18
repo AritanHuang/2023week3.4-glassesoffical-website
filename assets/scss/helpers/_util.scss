@@ -11,9 +11,15 @@
 .link-color {
     color: $link-color;
 }
+.font-secondary {
+    color: $secondary;
+}
 // 字體
 .fw-400 {
     font-weight: 400;
+}
+.fw-500 {
+    font-weight: 500;
 }
 .fw-700 {
     font-weight: 700;
@@ -36,6 +42,9 @@
 .fz-12 {
     font-size: $spacer * 12;
 }
+.fz-16 {
+    font-size: $spacer * 16;
+}
 //間距
 // .px-3 {
 //     padding: 0 $spacer * 3;
@@ -45,6 +54,9 @@
 }
 .pb-8 {
     padding-bottom: $spacer * 8;
+}
+.mb-1 {
+    margin-bottom: $spacer;
 }
 .mb-2 {
     margin-bottom: $spacer * 2;
@@ -65,8 +77,17 @@
 .jc-sb {
     justify-content: space-between;
 }
+.jc-end {
+    justify-content: end;
+}
 .ai-center {
     align-items: center;
+}
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
 }
 .gap-2 {
     gap: 8px;
@@ -83,4 +104,8 @@
 }
 .border-left {
     border-left: 8px solid $border-color;
+}
+//高度
+.h-100 {
+    height: 100%;
 }
