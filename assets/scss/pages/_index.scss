@@ -27,8 +27,6 @@
 }
 //服務項目區塊
 .service {
-    padding-top: $spacer * 20;
-    padding-bottom: $spacer * 20;
     .service-nav {
         @include pad {
             flex-wrap: wrap;
@@ -52,6 +50,28 @@
         img {
             width: 100px;
             height: 100px;
+        }
+    }
+}
+//經典鏡框區塊
+.classic {
+    padding-top: $spacer * 10;
+    padding-bottom: $spacer * 10;
+    h2 {
+        @include mobile {
+            font-size: $spacer * 6;
+            margin-bottom: $spacer * 6;
+        }
+    }
+    .classic-nav {
+        @include pad {
+            flex-wrap: wrap;
+        }
+        .classic-list {
+            width: 33.33%;
+            @include pad() {
+                width: 98%;
+            }
         }
     }
 }
