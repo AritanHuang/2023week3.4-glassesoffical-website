@@ -92,6 +92,12 @@
             font-size: $spacer * 6;
             margin-bottom: $spacer * 6;
         }
+        .design-pic1 {
+            content: url('/assets/images/home-section4-1-sm.png');
+        }
+        .design-pic2 {
+            content: url('/assets/images/home-section4-2-sm.png');
+        }
     }
     .design-nav {
         @include pad {
