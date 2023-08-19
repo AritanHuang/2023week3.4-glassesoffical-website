@@ -75,3 +75,33 @@
         }
     }
 }
+//聯名鏡框區塊
+.design {
+    background-image: url(/assets/images/index-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @include pad {
+        background-image: url(/assets/images/index-bg-md.png);
+    }
+    @include mobile {
+        background-image: url(/assets/images/index-bg-sm.png);
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+        h2 {
+            font-size: $spacer * 6;
+            margin-bottom: $spacer * 6;
+        }
+    }
+    .design-nav {
+        @include pad {
+            flex-wrap: wrap;
+            gap: $spacer * 6;
+        }
+        .design-list {
+            @include pad {
+                width: 98%;
+            }
+        }
+    }
+}
