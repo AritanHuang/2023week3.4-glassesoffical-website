@@ -148,3 +148,41 @@
         }
     }
 }
+// 聯絡我們區塊
+.contact {
+    @include mobile {
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+        h2 {
+            font-size: $spacer * 6;
+            margin-bottom: $spacer * 6;
+        }
+    }
+    .container {
+        max-width: 636px;
+    }
+    .contact-form {
+        input,
+        textarea {
+            padding: 6px 0px 6px 12px;
+        }
+        .checkbox-agree {
+            @include mobile {
+                display: flex;
+                align-items: start;
+                justify-content: center;
+            }
+        }
+        .contact-btn {
+            padding-top: $spacer * 4;
+            padding-bottom: $spacer * 4;
+            cursor: pointer;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            @include mobile {
+                width: 98%;
+            }
+        }
+    }
+}

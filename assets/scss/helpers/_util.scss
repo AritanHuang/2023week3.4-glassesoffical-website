@@ -6,6 +6,9 @@
     @include pad {
         max-width: 720px;
     }
+    @include mobile() {
+        max-width: 372px;
+    }
 }
 // 顏色
 .bg-primary {
@@ -155,6 +158,9 @@
 }
 .border-right {
     border-right: 1px solid #e0e0e0;
+}
+.border {
+    border: 1px solid #000;
 }
 //高度
 .h-100 {
