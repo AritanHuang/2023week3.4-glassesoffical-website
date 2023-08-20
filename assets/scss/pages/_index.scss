@@ -71,6 +71,9 @@
             width: 33.33%;
             @include pad() {
                 width: 98%;
+                img {
+                    max-width: calc(50% - 12px);
+                }
             }
         }
     }

@@ -3,6 +3,9 @@
     max-width: 1296px;
     margin: 0 auto;
     padding: 0 $spacer * 3;
+    @include pad {
+        max-width: 720px;
+    }
 }
 // 顏色
 .bg-primary {
