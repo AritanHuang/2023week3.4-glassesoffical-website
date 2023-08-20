@@ -4,7 +4,7 @@
     background-size: cover;
     background-position: center center;
     height: 100vh;
-    @include mobile {
+    @include pad {
         background-image: url(/assets/images/home-header-sm.png);
         h3 {
             font-size: $spacer * 4;
