@@ -23,6 +23,9 @@
 .font-secondary {
     color: $secondary;
 }
+.font-gray {
+    color: #707070;
+}
 //斜體
 .font-italic {
     font-style: italic;
@@ -73,6 +76,9 @@
     padding-top: $spacer * 20;
     padding-bottom: $spacer * 20;
 }
+.p-4 {
+    padding: $spacer * 4;
+}
 .pl-4 {
     padding-left: $spacer * 4;
 }
@@ -96,6 +102,9 @@
 }
 .mb-12 {
     margin-bottom: $spacer * 12;
+}
+.mb-18 {
+    margin-bottom: $spacer * 18;
 }
 .mr-5 {
     margin-right: $spacer * 5;

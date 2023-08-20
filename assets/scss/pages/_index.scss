@@ -111,3 +111,37 @@
         }
     }
 }
+// 顧客推薦區塊
+.recommend {
+    @include mobile {
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 10;
+        h2 {
+            font-size: $spacer * 6;
+            margin-bottom: $spacer * 6;
+        }
+    }
+    .recommend-nav {
+        @include pad {
+            flex-wrap: wrap;
+        }
+        @include mobile {
+            gap: $spacer * 4;
+        }
+    }
+    .recommend-list {
+        width: 25%;
+        border: 1px solid #dee2e6;
+        border-radius: 4px;
+        box-shadow: 0px 2px 6px #00000029;
+        &:hover {
+            box-shadow: 10px 20px 10px #00000029;
+        }
+        @include pad {
+            width: 48%;
+        }
+        @include mobile {
+            width: 98%;
+        }
+    }
+}
