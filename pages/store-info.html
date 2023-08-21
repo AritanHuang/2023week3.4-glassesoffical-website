@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- 取消iphone電話連結 -->
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>about</title>
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="store-info container">
+      <h2 class="fz-12 fw-700 pl-4 border-left mb-8">門市據點</h2>
+      <div class="store-select d-flex ai-center mb-10">
+        <label class="fz-6 mr-4 select-zone " for="area">選擇地區</label>
+        <select class="area" name="area" id="area">
+          <option value="">台北中山旗艦店</option>
+          <option value="taipei">台北市</option>
+          <option value="taichung">台中市</option>
+          <option value="kaohsiung">高雄市</option>
+        </select>
+      </div>
+      <div class="d-flex gap-6">
+        <div class="store-list">
+          <img src="/assets/images/storepage-1.png" alt="">
+          <h4 class="fz-6 store-title">台北中山旗艦店</h4>
+          <ul class="store-content-nav fz-5">
+            <li class="mb-2 d-flex">
+              <span class="material-symbols-outlined  mr-2">
+                call
+              </span>
+              <a class="font-black" href="tel:+886-2-0001234">
+                電話：(02)000-1234
+              </a>
+            </li>
+            <li class="mb-2 d-flex">
+              <span class="material-symbols-outlined mr-2">
+                schedule
+              </span>
+              <p>營業時間：10:00-21:00</p>
+            </li>
+            <li class="d-flex">
+              <span class="material-symbols-outlined mr-2">
+                location_on
+              </span>
+              <p>地址：台北市中山區南京東路25巷2-1號</p>
+            </li>
+          </ul>
+        </div>
+        <img src="/assets/images/store-map.png" alt="">
+      </div>
+    </section>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

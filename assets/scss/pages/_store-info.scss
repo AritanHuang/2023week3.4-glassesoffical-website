@@ -1,0 +1,22 @@
+.store-info {
+    margin-top: $spacer * 24;
+    margin-bottom: $spacer * 20;
+    .store-list {
+        border: 1px solid #00000020;
+    }
+    .area {
+        padding: 6px 12px;
+        width: 304px;
+        border: 1px solid #ced4da;
+        @include mobile {
+            width: 276px;
+        }
+    }
+    .store-title {
+        border-bottom: 1px solid #00000020;
+        padding: 8px 0px 8px 24px;
+    }
+    .store-content-nav {
+        padding: $spacer * 4 $spacer * 6;
+    }
+}
