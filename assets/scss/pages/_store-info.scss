@@ -23,10 +23,12 @@
     }
     .store-list {
         width: 40%;
+        border: 1px solid #00000020;
         @include pad {
             display: flex;
             width: 100%;
             gap: $spacer * 6;
+            border: none;
             img {
                 width: 50%;
             }
