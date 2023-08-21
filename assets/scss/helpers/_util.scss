@@ -183,3 +183,7 @@
 .h-100 {
     height: 100%;
 }
+//解決iphone斷行問題
+.mobile-wrap {
+    white-space: nowrap;
+}
