@@ -1,0 +1,51 @@
+.store {
+    margin-top: $spacer * 24;
+    margin-bottom: $spacer * 20;
+    @include mobile {
+        margin-top: $spacer * 10;
+        margin-bottom: $spacer * 14;
+        h2 {
+            margin-bottom: $spacer * 6;
+            font-size: $spacer * 6;
+        }
+        .select-zone {
+            font-size: $spacer * 4;
+            margin-right: $spacer * 2;
+        }
+        .store-select {
+            margin-bottom: $spacer * 6;
+        }
+    }
+    .store-nav {
+        flex-wrap: wrap;
+        .store-list {
+            width: 32%;
+            border: 1px solid #00000020;
+            @include pad {
+                width: 48%;
+            }
+            @include mobile {
+                width: 98%;
+            }
+        }
+        .store-title {
+            border-bottom: 1px solid #00000020;
+            padding: 8px 0px 8px 24px;
+        }
+        .store-content-nav {
+            padding: $spacer * 4 $spacer * 6;
+        }
+        .store-detail-btn:hover {
+            background: $primary;
+            color: #fff;
+        }
+    }
+    .area {
+        padding: 6px 12px;
+        width: 304px;
+        border: 1px solid #ced4da;
+        @include mobile {
+            width: 276px;
+        }
+    }
+}

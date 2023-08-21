@@ -20,6 +20,9 @@
 .bg-white {
     background: $link-color;
 }
+.bg-black {
+    background: #000;
+}
 .link-color {
     color: $link-color;
 }
@@ -78,6 +81,10 @@
     padding-top: $spacer * 2;
     padding-bottom: $spacer * 2;
 }
+.py-4 {
+    padding-top: $spacer * 4;
+    padding-bottom: $spacer * 4;
+}
 .py-20 {
     padding-top: $spacer * 20;
     padding-bottom: $spacer * 20;
@@ -106,11 +113,21 @@
 .mb-8 {
     margin-bottom: $spacer * 8;
 }
+.mb-10 {
+    margin-bottom: $spacer * 10;
+}
 .mb-12 {
     margin-bottom: $spacer * 12;
 }
 .mb-18 {
     margin-bottom: $spacer * 18;
+}
+.mr-2 {
+    margin-right: $spacer * 2;
+}
+
+.mr-4 {
+    margin-right: $spacer * 4;
 }
 .mr-5 {
     margin-right: $spacer * 5;
