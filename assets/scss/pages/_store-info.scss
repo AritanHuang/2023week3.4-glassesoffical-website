@@ -1,8 +1,55 @@
 .store-info {
     margin-top: $spacer * 24;
     margin-bottom: $spacer * 20;
+    @include mobile {
+        margin-top: $spacer * 10;
+        margin-bottom: $spacer * 16;
+        h2 {
+            font-size: $spacer * 6;
+            margin-bottom: $spacer * 6;
+        }
+        .select-zone {
+            font-size: $spacer * 4;
+            margin-right: $spacer * 2;
+        }
+        .store-select {
+            margin-bottom: $spacer * 6;
+        }
+    }
+    .store-info-nav {
+        @include pad {
+            flex-wrap: wrap;
+        }
+    }
     .store-list {
-        border: 1px solid #00000020;
+        width: 40%;
+        @include pad {
+            display: flex;
+            width: 100%;
+            gap: $spacer * 6;
+            img {
+                width: 50%;
+            }
+            .store-info-content {
+                width: 50%;
+                border: 1px solid #00000020;
+            }
+        }
+        @include mobile {
+            display: block;
+            img {
+                width: 100%;
+            }
+            .store-info-content {
+                width: 100%;
+            }
+        }
+    }
+    .store-info-map {
+        width: 60%;
+        @include pad {
+            width: 100%;
+        }
     }
     .area {
         padding: 6px 12px;

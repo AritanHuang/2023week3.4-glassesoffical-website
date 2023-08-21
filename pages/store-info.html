@@ -25,34 +25,36 @@
           <option value="kaohsiung">高雄市</option>
         </select>
       </div>
-      <div class="d-flex gap-6">
+      <div class="d-flex gap-6 store-info-nav">
         <div class="store-list">
           <img src="/assets/images/storepage-1.png" alt="">
-          <h4 class="fz-6 store-title">台北中山旗艦店</h4>
-          <ul class="store-content-nav fz-5">
-            <li class="mb-2 d-flex">
-              <span class="material-symbols-outlined  mr-2">
-                call
-              </span>
-              <a class="font-black" href="tel:+886-2-0001234">
-                電話：(02)000-1234
-              </a>
-            </li>
-            <li class="mb-2 d-flex">
-              <span class="material-symbols-outlined mr-2">
-                schedule
-              </span>
-              <p>營業時間：10:00-21:00</p>
-            </li>
-            <li class="d-flex">
-              <span class="material-symbols-outlined mr-2">
-                location_on
-              </span>
-              <p>地址：台北市中山區南京東路25巷2-1號</p>
-            </li>
-          </ul>
+          <div class="store-info-content">
+            <h4 class="fz-6 store-title">台北中山旗艦店</h4>
+            <ul class="store-content-nav fz-5">
+              <li class="mb-2 d-flex">
+                <span class="material-symbols-outlined  mr-2">
+                  call
+                </span>
+                <a class="font-black" href="tel:+886-2-0001234">
+                  電話：(02)000-1234
+                </a>
+              </li>
+              <li class="mb-2 d-flex">
+                <span class="material-symbols-outlined mr-2">
+                  schedule
+                </span>
+                <p>營業時間：10:00-21:00</p>
+              </li>
+              <li class="d-flex">
+                <span class="material-symbols-outlined mr-2">
+                  location_on
+                </span>
+                <p>地址：台北市中山區南京東路25巷2-1號</p>
+              </li>
+            </ul>
+          </div>
         </div>
-        <img src="/assets/images/store-map.png" alt="">
+        <div class="store-info-map"> <img src="/assets/images/store-map.png" alt=""></div>
       </div>
     </section>
     <%- include('./layout/footer'); -%>
