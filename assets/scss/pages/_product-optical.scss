@@ -1,0 +1,108 @@
+.product-nav {
+    @include pad {
+        max-width: 100%;
+        padding: 0px;
+    }
+    .product-list {
+        width: 33.33%;
+        padding-top: $spacer * 6;
+        padding-bottom: $spacer * 6;
+        border: 1px solid #dcdcdc;
+        &:hover {
+            border-bottom: 8px solid $border-color;
+        }
+        @include pad {
+            padding-top: $spacer * 4;
+            padding-bottom: $spacer * 4;
+        }
+        @include mobile {
+            a {
+                font-size: $spacer * 4;
+            }
+        }
+    }
+}
+.product-header {
+    li {
+        width: 50%;
+        @include mobile {
+            .product-header-pic1 {
+                content: url(/assets/images/product-header-sm-1.png);
+            }
+            .product-header-pic2 {
+                content: url(/assets/images/product-header-sm-2.png);
+            }
+        }
+    }
+}
+.product-optical {
+    @include mobile {
+        padding-top: $spacer * 10;
+        padding-bottom: $spacer * 16;
+        h3 {
+            font-size: $spacer * 6;
+        }
+        .optical-title {
+            margin-bottom: $spacer * 6;
+        }
+    }
+    .optical {
+        flex-wrap: wrap;
+        .optical-list {
+            width: 23%;
+            @include pad {
+                width: 43%;
+                &:not(:nth-last-child(-n + 2)) {
+                    margin-bottom: $spacer * 10;
+                }
+            }
+            @include mobile {
+                width: 98%;
+                &:not(:nth-last-child(-n + 1)) {
+                    margin-bottom: $spacer * 6;
+                }
+                &:last-child {
+                    margin-bottom: $spacer * 16;
+                }
+            }
+        }
+        .dark-brown {
+            width: 24px;
+            height: 24px;
+            background: #5f3e2d;
+            border-radius: 4px;
+        }
+        .brown {
+            width: 24px;
+            height: 24px;
+            background: #b75929;
+            border-radius: 4px;
+        }
+    }
+    .pagination {
+        .page-item {
+            border: 1px solid #555555;
+            .page-item-text {
+                font-size: 19px;
+                padding: 11px 12px;
+                @include mobile {
+                    font-size: 16px;
+                }
+                &:hover {
+                    background: #f2f2f2;
+                }
+            }
+            .page-item-num {
+                font-size: 18px;
+                padding: 11px 12px;
+                &:hover {
+                    background: #000;
+                    color: #fff;
+                }
+                @include mobile {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

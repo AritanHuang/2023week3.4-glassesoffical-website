@@ -64,6 +64,9 @@
 .fz-6 {
     font-size: $spacer * 6;
 }
+.fz-8 {
+    font-size: $spacer * 8;
+}
 .fz-9 {
     font-size: $spacer * 9;
 }
@@ -75,6 +78,9 @@
 }
 .fz-16 {
     font-size: $spacer * 16;
+}
+.fz-42 {
+    font-size: 42px;
 }
 //間距
 // .px-3 {
@@ -125,6 +131,9 @@
 .mb-18 {
     margin-bottom: $spacer * 18;
 }
+.mb-20 {
+    margin-bottom: $spacer * 20;
+}
 .mr-2 {
     margin-right: $spacer * 2;
 }
@@ -135,9 +144,15 @@
 .mr-5 {
     margin-right: $spacer * 5;
 }
+.mr-6 {
+    margin-right: $spacer * 6;
+}
 //flex排版
 .d-flex {
     display: flex;
+}
+.jc-center {
+    justify-content: center;
 }
 .jc-sb {
     justify-content: space-between;
